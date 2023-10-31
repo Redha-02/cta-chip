@@ -52,6 +52,41 @@ class CtaChip extends LitElement {
     display: inline-flex;
   }
 
+  :host([primaryOutlined]) a:hover,
+  :host([primaryOutlined]) a:active,
+  :host([primaryOutlined]) a:focus {
+    background-color: #005fa9;
+    color: #fff;
+  }
+
+  :host([primaryFilled]) a:hover,
+  :host([primaryFilled]) a:active,
+  :host([primaryFilled]) a:focus {
+    background-color: #fff;
+    color:#005fa9;
+  }
+
+  :host([tinted]) a:hover,
+  :host([tinted]) a:active,
+  :host([tinted]) a:focus {
+    background-color: #fff;
+    color:#4f627c;
+  }
+
+  :host([lightOutlined]) a:hover,
+  :host([lightOutlined]) a:active,
+  :host([lightOutlined]) a:focus {
+    background-color: #a5e7fe;
+    color:#011e44;
+  }
+
+  :host([lightFilled]) a:hover,
+  :host([lightFilled]) a:active,
+  :host([lightFilled]) a:focus {
+    background-color: #011e44;
+    color:#a5e7fe;
+  }
+
   :host([primaryOutlined]) .wrapper,
   :host([primaryFilled]) .wrapper {
     background-color: #fff;
@@ -116,7 +151,7 @@ class CtaChip extends LitElement {
   }
 
   :host([lightOutlined]) a {
-    border: 2px solid #fff;
+    border: 2px solid #a5e7fe;
     background-color: #011e44;
     color: #a5e7fe;
     padding: 12px 32px;
